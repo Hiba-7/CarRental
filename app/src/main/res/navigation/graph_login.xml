@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_login"
+    app:startDestination="@id/loginFragment22">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/loginFragment22"
+        android:name="com.example.myapplication.LoginFragment2"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/action_loginFragment22_to_registerStepp012"
+            app:destination="@id/registerStepp012" />
+        <action
+            android:id="@+id/action_loginFragment22_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStepp012"
+        android:name="com.example.myapplication.registerStepp01"
+        android:label="fragment_register_stepp01"
+        tools:layout="@layout/fragment_register_stepp01" >
+        <action
+            android:id="@+id/action_registerStepp012_to_registerStep022"
+            app:destination="@id/registerStep022" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStep022"
+        android:name="com.example.myapplication.registerStep02"
+        android:label="fragment_register_step02"
+        tools:layout="@layout/fragment_register_step02" >
+        <action
+            android:id="@+id/action_registerStep022_to_registerStep032"
+            app:destination="@id/registerStep032" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStep032"
+        android:name="com.example.myapplication.registerStep03"
+        android:label="fragment_register_step03"
+        tools:layout="@layout/fragment_register_step03" >
+        <action
+            android:id="@+id/action_registerStep032_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

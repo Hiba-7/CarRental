@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageVoitureDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="311dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/a"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marque"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/marque"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Audi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="448dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/corner_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/typeMoteur4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Reservation"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tarif" />
+
+        <TextView
+            android:id="@+id/typeMoteur2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Features"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modele" />
+
+        <Button
+            android:id="@+id/moteur"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_corners"
+            android:clickable="false"
+            android:enabled="false"
+            android:paddingLeft="40dp"
+            android:text="1.4 TDI"
+            android:textColor="@color/black"
+            android:theme="@style/AppTheme.Button"
+            app:backgroundTint="#F0EBEA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typeMoteur2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/car_moteur"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="@+id/moteur"
+            app:layout_constraintStart_toStartOf="@+id/moteur"
+            app:layout_constraintTop_toTopOf="@+id/moteur"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <TextView
+            android:id="@+id/modele"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="A1 "
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="104dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typeMoteur4" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="142dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintStart_toEndOf="@+id/editTextDate"
+            app:layout_constraintTop_toBottomOf="@+id/typeMoteur4" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/rectangle_corners"
+            android:text="Book Now"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/AppTheme.ButtonPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+            app:layout_constraintVertical_bias="0.289" />
+
+        <Button
+            android:id="@+id/tarif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rectangle_corners"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="1000 km/heure"
+            android:textColor="#000000"
+            android:theme="@style/AppTheme.Button"
+            app:backgroundTint="#F0EBEA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moteur" />
+
+        <Button
+            android:id="@+id/availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/rectangle_corners"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="Available"
+            android:textColor="#000000"
+            android:theme="@style/AppTheme.Button"
+            app:backgroundTint="#F0EBEA"
+            app:layout_constraintStart_toEndOf="@+id/tarif"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <Button
+            android:id="@+id/capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginStart="72dp"
+            android:background="@drawable/rectangle_corners"
+            android:clickable="false"
+            android:enabled="false"
+            android:paddingLeft="36dp"
+            android:text="5 person"
+            android:textColor="@color/black"
+            android:theme="@style/AppTheme.Button"
+            app:backgroundTint="#F0EBEA"
+            app:layout_constraintStart_toEndOf="@+id/moteur"
+            app:layout_constraintTop_toTopOf="@+id/moteur" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/location_button"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="13dp"
+        android:paddingTop="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

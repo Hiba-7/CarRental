@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="#F7F7F7">
+
+    <TextView
+        android:id="@+id/DateTrajet"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/trajetpicture"
+        app:layout_constraintTop_toBottomOf="@+id/marqueV" />
+
+    <TextView
+        android:id="@+id/modele"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="textview"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/trajetpicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/marqueV"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="textview"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/trajetpicture"
+        app:layout_constraintTop_toBottomOf="@+id/modele" />
+
+    <Button
+        android:id="@+id/pin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="179dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/rectangle_corners_2"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:theme="@style/AppTheme.ButtonPrimary"
+        app:backgroundTint="#C82163ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/HeureD"
+        app:layout_constraintTop_toBottomOf="@+id/DateTrajet" />
+
+    <TextView
+        android:id="@+id/HeureD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/trajetpicture"
+        app:layout_constraintTop_toBottomOf="@+id/DateTrajet" />
+
+    <ImageView
+        android:id="@+id/trajetpicture"
+        android:layout_width="62dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/destination" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

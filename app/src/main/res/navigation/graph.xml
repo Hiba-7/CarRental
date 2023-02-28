@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_carFragment"
+            app:destination="@id/carFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carFragment"
+        android:name="com.example.myapplication.CarFragment"
+        android:label="fragment_car"
+        tools:layout="@layout/fragment_car">
+        <action
+            android:id="@+id/action_carFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_carFragment_to_unLockCar"
+            app:destination="@id/unLockCar" />
+    </fragment>
+    <fragment
+        android:id="@+id/unLockCar"
+        android:name="com.example.myapplication.UnLockCar"
+        android:label="fragment_un_lock_car"
+        tools:layout="@layout/fragment_un_lock_car" >
+        <action
+            android:id="@+id/action_unLockCar_to_bluetoothList"
+            app:destination="@id/bluetoothList" />
+        <action
+            android:id="@+id/action_unLockCar_to_endTrip"
+            app:destination="@id/endTrip" />
+    </fragment>
+    <fragment
+        android:id="@+id/bluetoothList"
+        android:name="com.example.myapplication.BluetoothList"
+        android:label="fragment_bluetooth_list"
+        tools:layout="@layout/fragment_bluetooth_list" >
+        <action
+            android:id="@+id/action_bluetoothList_to_endTrip"
+            app:destination="@id/endTrip" />
+    </fragment>
+    <fragment
+        android:id="@+id/endTrip"
+        android:name="com.example.myapplication.EndTrip"
+        android:label="fragment_end_trip"
+        tools:layout="@layout/fragment_end_trip" />
+</navigation>

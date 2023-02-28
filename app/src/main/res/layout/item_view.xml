@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="120dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="#F7F7F7"
+    android:clickable="true"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageVoiture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/modele"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/modele"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="A1 ALLSTREET⠀"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/marqueV"
+        app:layout_constraintStart_toEndOf="@+id/imageVoiture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TarifKmHeure"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="1000 km/heure"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageVoiture"
+        app:layout_constraintTop_toBottomOf="@+id/marqueV" />
+
+    <TextView
+        android:id="@+id/marqueV"
+        android:layout_width="163dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Audi"
+        android:clickable="false"
+        android:focusable="false"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/TarifKmHeure"
+        app:layout_constraintStart_toEndOf="@+id/imageVoiture"
+        app:layout_constraintTop_toBottomOf="@+id/modele" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/Availability"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/available" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

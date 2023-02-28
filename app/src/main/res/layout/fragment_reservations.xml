@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ReservationsFragment">
+
+    <TextView
+        android:id="@+id/nomVoiture_Marque_Modèle3"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Reservation"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/exitButton3"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/grey"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_lines"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="723dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_home"
+        tools:listitem="@layout/item_view_reservation" />
+
+    <SearchView
+        android:id="@+id/search_home"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="17dp"
+        android:iconifiedByDefault="false"
+        android:padding="4dp"
+        android:paddingStart="0dp"
+        android:paddingRight="0dp"
+        android:queryHint="Find your reservation"
+        app:layout_constraintStart_toStartOf="@+id/exitButton3"
+        app:layout_constraintTop_toBottomOf="@+id/nomVoiture_Marque_Modèle3">
+
+    </SearchView>
+</androidx.constraintlayout.widget.ConstraintLayout>

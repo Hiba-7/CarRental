@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="18sp"
+    tools:context=".UnLockCar">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="392dp"
+        android:layout_height="362dp"
+        android:src="@drawable/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/nomVoiture_Marque_Modèle1"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Audi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="13dp"
+        android:paddingTop="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="413dp"
+        android:layout_height="294dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/corner_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/Nom_voiture"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="A1 ALLSTREET⠀"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nomVoiture_Marque_Modèle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="audi"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Nom_voiture"
+            app:layout_constraintTop_toBottomOf="@+id/Nom_voiture" />
+
+        <TextView
+            android:id="@+id/pincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Pin Code"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomVoiture_Marque_Modèle2" />
+
+        <TextView
+            android:id="@+id/TarifKmHeure"
+            android:layout_width="140dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="1000 km/heure"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toEndOf="@+id/nomVoiture_Marque_Modèle2"
+            app:layout_constraintTop_toBottomOf="@+id/Nom_voiture" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/needrect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.878"
+            app:layout_constraintStart_toEndOf="@+id/pincode"
+            app:layout_constraintTop_toBottomOf="@+id/TarifKmHeure" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="157dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintEnd_toEndOf="@+id/imageView20"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/imageView20"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <ImageView
+            android:id="@+id/unlockbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/rectunlock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+        <ImageView
+            android:id="@+id/cancelbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/rectcancel"
+            app:layout_constraintEnd_toStartOf="@+id/unlockbutton"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pincode" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Unlock"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/unlockbutton"
+            app:layout_constraintEnd_toEndOf="@+id/unlockbutton"
+            app:layout_constraintStart_toStartOf="@+id/unlockbutton"
+            app:layout_constraintTop_toTopOf="@+id/unlockbutton" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Cancel"
+            android:textColor="#6E6C6B"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cancelbutton"
+            app:layout_constraintEnd_toEndOf="@+id/cancelbutton"
+            app:layout_constraintStart_toStartOf="@+id/cancelbutton"
+            app:layout_constraintTop_toTopOf="@+id/cancelbutton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
